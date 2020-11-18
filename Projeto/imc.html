@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qualidade de vida</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Índice de massa corporal</h1>
+    </header>
+    <section>
+        <div id= "dados">
+            <input type="number"  name="txtp" id="txtp" placeholder="Peso">
+            <input type="number"  name="txta" id="txta" placeholder="Altura">
+            <input type="button" value="contar" onclick="contar()">
+
+        </div>
+
+        <div id= "res">
+            Aguardando dados...
+        </div>
+    </section>
+
+    <table border="1">
+
+    <tbody>
+        <th colspan="3">Tabela de resultados </th>
+                
+        <tr >
+            <td >IMC</td>
+            <td >Classificação</td>
+            <td> Obesidade <small>(grau)</small></td>
+        </tr>
+        <tr >
+            <td>Menor que 18,5</td>
+            <td>Magreza</td>
+            <td >0</td>
+        </tr>
+        <tr>
+            <td>Entre 18,5 e 24,9</td>
+            <td>Normal</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Entre 25,0 e 29,9</td>
+            <td>Sobrepeso</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>Entre 30,0 e 39,9</td>
+            <td>Obesidade</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Maior que 40,0</td>
+            <td>Obesidade Grave</td>
+            <td>3</td>
+        </tr>
+    
+    </tbody>
+    
+</table>
+
+                
+    <script src="script.js"></script>
+</body>
+</html>
